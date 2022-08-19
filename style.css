@@ -21,6 +21,9 @@
 .logo {
     display: flex;
     justify-content: center;
+}
+
+.logo img {
     padding-top: 10%;
 }
 
@@ -56,12 +59,31 @@
     color: white;
     font-weight: 400;
     font-size: 1.5rem;
+
+    
 }
 
 .email , .senha , .botao_login{
     display: flex;
     justify-content: center;
 }
+
+.email input {
+    background-image: url(./assets/icons8-usuário-de-gênero-neutro-32.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: left;
+    padding-left: 8%;
+}
+
+.senha input {
+    background-image: url(./assets/cadeado_senha.png);
+    background-repeat: no-repeat;
+    background-size: 37px;
+    background-position: left;
+    padding-left: 8%;
+}
+
 
 /* Body da tela principal */
 .tela_principal {
@@ -74,12 +96,12 @@
 .header {
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 85px;
     background-color: #145C08;
     justify-content: center;
 }
 
-.logo {
+.logo_tela_principal {
     padding: 0;
 }
 
@@ -120,6 +142,11 @@
     align-items: center;
     border: solid 2px;
     border-color: #c5c7c9;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/5617/5617164.png);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: 95%;
+    
 }
 
 .caixa_titulo h1 {
@@ -148,8 +175,36 @@
     border-color: #c5c7c9;
 }
 
+.caixa_estoque {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/4947/4947506.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 10%;
+
+}
+
+.caixa_cadastrar {
+    background-image: url(https://cdn-icons.flaticon.com/png/128/3803/premium/3803965.png?token=exp=1660928802~hmac=c7c5643a47bd8240a999ac56180e36d3);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 10%;
+}
+
+.caixa_excluir {
+    background-image: url(./assets/excluir.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 10%;
+}
+
+.caixa_editar {
+    background-image: url(./assets/escrever.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 10%;
+}
+
 .caixa_dados {
-    display: flex;
     width: 100%;
     height: 350px;
     background-color: #e1e2e6;
@@ -157,4 +212,23 @@
     border: solid 2px;
     border-color: #c5c7c9;
     border-radius: 2px;
+}
+
+.input_estoque {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.input_estoque input {
+    display: flex;
+    width: 80%;
+    height: 40px;
+    margin: 10px;
+    background-image: url(https://cdn-icons.flaticon.com/png/128/3991/premium/3991270.png?token=exp=1660932313~hmac=13125a7181f4a7b999a3a6b0c24ae067);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 95%;
+    padding-left: 2%;
+    border-color: #0D1136;
 }
