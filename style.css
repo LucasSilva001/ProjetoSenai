@@ -32,7 +32,7 @@
 }
 
 .login input  {
-    width: 65%;
+    width: 63%;
     height: 50px;
     border-radius: 10px;
     border-color: #0D1136;
@@ -58,9 +58,7 @@
     text-decoration: none;
     color: white;
     font-weight: 400;
-    font-size: 1.5rem;
-
-    
+    font-size: 1.5rem; 
 }
 
 .email , .senha , .botao_login{
@@ -84,6 +82,17 @@
     padding-left: 8%;
 }
 
+#link_cadastro a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#link_cadastro a:hover {
+    color: blue;
+}
 
 /* Body da tela principal */
 .tela_principal {
@@ -184,7 +193,7 @@
 }
 
 .caixa_cadastrar {
-    background-image: url(https://cdn-icons.flaticon.com/png/128/3803/premium/3803965.png?token=exp=1660928802~hmac=c7c5643a47bd8240a999ac56180e36d3);
+    background-image: url(./assets/registro.png);
     background-repeat: no-repeat;
     background-size: 50px;
     background-position: 10%;
@@ -193,14 +202,14 @@
 .caixa_excluir {
     background-image: url(./assets/excluir.png);
     background-repeat: no-repeat;
-    background-size: 50px;
-    background-position: 10%;
+    background-size: 45px;
+    background-position: 12%;
 }
 
 .caixa_editar {
     background-image: url(./assets/escrever.png);
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 45px;
     background-position: 10%;
 }
 
@@ -231,4 +240,108 @@
     background-position: 95%;
     padding-left: 2%;
     border-color: #0D1136;
+}
+
+/* Página de cadastro */
+
+.pagina_cadastro {
+    display: flex;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: darkgray;
+    justify-content: center;
+}
+
+.caixa_cadastro {
+    width: 35%;
+    background-color: #0D1136;
+    padding: 12px;
+}
+
+.banner_cadastro {
+    display: flex;
+    height: 100%;
+}
+
+.logo_cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.logo_cadastro img {
+    padding-top: 4%;
+}
+
+#texto_cadastro {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 1.5rem;
+}
+
+.cadastro input  {
+    width: 63%;
+    height: 50px;
+    border-radius: 10px;
+    border-color: #0D1136;
+    margin-top: 35px;
+    padding: 0 10px;
+    background-color: darkgray;
+}
+
+.cadastro_usuario, .cadastro_email , .cadastro_senha , .confirmacao_senha, .botao_cadastro{
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro_usuario input {
+    background-image: url(./assets/icons8-usuário-de-gênero-neutro-32.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: left;
+    padding-left: 8%;
+}
+
+.cadastro_email input {
+    background-image: url(./assets/icons8-usuário-de-gênero-neutro-32.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: left;
+    padding-left: 8%;
+}
+
+.cadastro_senha input , .confirmacao_senha input {
+    background-image: url(./assets/cadeado_senha.png);
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left;
+    padding-left: 8%;
+}
+
+.botao_cadastro {
+    width: 65%;
+    height: 45px;
+    border-radius: 10px;
+    border-color: #0D1136;
+    margin-top: 20px;
+    background-color: dimgray;
+    border: 1px solid transparent;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem; 
+}
+
+#link_login a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#link_login a:hover {
+    color: blue;
 }
