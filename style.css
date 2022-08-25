@@ -280,7 +280,7 @@ h1 {
 }
 
 .logo_cadastro img {
-    padding-top: 4%;
+    padding-top: 3%;
 }
 
 #texto_cadastro {
@@ -292,11 +292,11 @@ h1 {
 }
 
 .cadastro input  {
-    width: 63%;
-    height: 50px;
+    width: 58%;
+    height: 45px;
     border-radius: 10px;
     border-color: #0D1136;
-    margin-top: 35px;
+    margin-top: 28px;
     padding: 0 10px;
     background-color: darkgray;
 }
@@ -331,7 +331,7 @@ h1 {
 }
 
 .botao_cadastro {
-    width: 65%;
+    width: 58%;
     height: 45px;
     border-radius: 10px;
     border-color: #0D1136;
