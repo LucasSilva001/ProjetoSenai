@@ -24,7 +24,15 @@
 }
 
 .logo img {
-    padding-top: 10%;
+    padding-top: 5%;
+}
+
+#texto_login {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 2.0rem;
 }
 
 .login {
@@ -32,11 +40,11 @@
 }
 
 .login input  {
-    width: 63%;
-    height: 50px;
+    width: 62%;
+    height: 48px;
     border-radius: 10px;
     border-color: #0D1136;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 0 10px;
     background-color: darkgray;
 }
@@ -47,8 +55,8 @@
 }
 
 .botao_login {
-    width: 65%;
-    height: 45px;
+    width: 62%;
+    height: 42px;
     border-radius: 10px;
     border-color: #0D1136;
     margin-top: 40px;
@@ -67,18 +75,20 @@
 }
 
 .email input {
-    background-image: url(./assets/icons8-usuário-de-gênero-neutro-32.png);
+    background-image: url(./assets/o-email.png);
     background-repeat: no-repeat;
-    background-size: 40px;
+    background-size: 25px;
     background-position: left;
+    background-position: 5px;
     padding-left: 8%;
 }
 
 .senha input {
     background-image: url(./assets/cadeado_senha.png);
     background-repeat: no-repeat;
-    background-size: 37px;
+    background-size: 30px;
     background-position: left;
+    background-position: 2px;
     padding-left: 8%;
 }
 
@@ -131,7 +141,7 @@
 
 .painel_esquerdo {
     height: 100vh;
-    width: 300px;
+    width: 350px;
     background-color: #D9D9D9;
     margin-top: 10px;
     border: solid 2px;
@@ -183,7 +193,7 @@ h1 {
 .caixa_estoque , .caixa_cadastrar , .caixa_excluir, .caixa_editar {
     display: flex;
     height: 70px;
-    width: 22%;
+    width: 20%;
     background-color: #D9D9D9;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -196,32 +206,31 @@ h1 {
 }
 
 .caixa_estoque {
-    background-image: url(https://cdn-icons-png.flaticon.com/128/4947/4947506.png);
+    background-image: url(./assets/estoque-pronto.png);
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 45px;
     background-position: 10%;
-
 }
 
 .caixa_cadastrar {
     background-image: url(./assets/registro.png);
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 45px;
     background-position: 10%;
 }
 
 .caixa_excluir {
     background-image: url(./assets/excluir.png);
     background-repeat: no-repeat;
-    background-size: 45px;
+    background-size: 40px;
     background-position: 12%;
 }
 
 .caixa_editar {
     background-image: url(./assets/escrever.png);
     background-repeat: no-repeat;
-    background-size: 45px;
-    background-position: 10%;
+    background-size: 35px;
+    background-position: 15%;
 }
 
 .caixa_dados {
@@ -309,24 +318,26 @@ h1 {
 .cadastro_usuario input {
     background-image: url(./assets/icons8-usuário-de-gênero-neutro-32.png);
     background-repeat: no-repeat;
-    background-size: 40px;
+    background-size: 35px;
     background-position: left;
     padding-left: 8%;
 }
 
 .cadastro_email input {
-    background-image: url(./assets/icons8-usuário-de-gênero-neutro-32.png);
+    background-image: url(./assets/o-email.png);
     background-repeat: no-repeat;
-    background-size: 40px;
+    background-size: 25px;
     background-position: left;
+    background-position: 5px;
     padding-left: 8%;
 }
 
 .cadastro_senha input , .confirmacao_senha input {
     background-image: url(./assets/cadeado_senha.png);
     background-repeat: no-repeat;
-    background-size: 35px;
+    background-size: 30px;
     background-position: left;
+    background-position: 1px;
     padding-left: 8%;
 }
 
