@@ -1,21 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Body da index */
 .pagina_login {
     display: flex;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
     overflow-y: hidden;
     background-color: darkgray;
     justify-content: center;
+    align-items: center;
+}
+
+#interface_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 75%;
+    margin: 0;
+    padding: 0;
 }
 
 .caixa {
-    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
     background-color: #0D1136;
-    padding: 12px;
 }
 
-.banner {
-    display: flex;
+#box-imagem {
     height: 100%;
+    width: 50%;
+}
+
+#box-imagem img {
+    height: 100%;
+    width: 100%;
 }
 
 .logo {
@@ -25,6 +51,7 @@
 
 .logo img {
     padding-top: 5%;
+    width: 100%;
 }
 
 #texto_login {
@@ -36,11 +63,12 @@
 }
 
 .login {
+    width: 80%;
     padding-top: 5%;
 }
 
 .login input  {
-    width: 62%;
+    width: 100%;
     height: 48px;
     border-radius: 10px;
     border-color: #0D1136;
@@ -72,24 +100,27 @@
 .email , .senha , .botao_login{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .email input {
     background-image: url(./assets/o-email.png);
     background-repeat: no-repeat;
     background-size: 25px;
-    background-position: left;
-    background-position: 5px;
-    padding-left: 8%;
+    background-position-x: 95%;
+    background-position-y: center;
+    padding: 0 15% 0 5%;
+    outline: none;
 }
 
 .senha input {
     background-image: url(./assets/cadeado_senha.png);
     background-repeat: no-repeat;
     background-size: 30px;
-    background-position: left;
-    background-position: 2px;
-    padding-left: 8%;
+    background-position-x: 95%;
+    background-position-y: center;
+    padding: 0 15% 0 5%;
+    outline: none;
 }
 
 #link_cadastro a {
@@ -143,14 +174,15 @@
     height: 100vh;
     width: 350px;
     background-color: #D9D9D9;
-    margin-top: 10px;
+    margin-top: 5px;
     border: solid 2px;
     border-color: #c5c7c9;
 }
 
 .painel_esquerdo img {
-    width: 100%;
-    height: 70px;
+    width: 95%;
+    margin-top: 10%;
+    justify-content: center;
 }
 
 .painel_esquerdo a {
@@ -192,8 +224,8 @@ h1 {
 
 .caixa_estoque , .caixa_cadastrar , .caixa_excluir, .caixa_editar {
     display: flex;
-    height: 70px;
-    width: 20%;
+    height: 65px;
+    width: 18%;
     background-color: #D9D9D9;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -208,21 +240,21 @@ h1 {
 .caixa_estoque {
     background-image: url(./assets/estoque-pronto.png);
     background-repeat: no-repeat;
-    background-size: 45px;
+    background-size: 40px;
     background-position: 10%;
 }
 
 .caixa_cadastrar {
     background-image: url(./assets/registro.png);
     background-repeat: no-repeat;
-    background-size: 45px;
+    background-size: 40px;
     background-position: 10%;
 }
 
 .caixa_excluir {
     background-image: url(./assets/excluir.png);
     background-repeat: no-repeat;
-    background-size: 40px;
+    background-size: 35px;
     background-position: 12%;
 }
 
@@ -266,16 +298,42 @@ h1 {
 
 .pagina_cadastro {
     display: flex;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
     overflow-y: hidden;
     background-color: darkgray;
     justify-content: center;
+    align-items: center;
+}
+
+#interface-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 75%;
+    margin: 0;
+    padding: 0;
 }
 
 .caixa_cadastro {
-    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
     background-color: #0D1136;
-    padding: 12px;
+}
+
+#box-cadastro {
+    height: 100%;
+    width: 50%;
+}
+
+#box-cadastro img {
+    height: 100%;
+    width: 100%;
 }
 
 .banner_cadastro {
@@ -289,6 +347,7 @@ h1 {
 }
 
 .logo_cadastro img {
+    width: 100%;
     padding-top: 3%;
 }
 
@@ -300,12 +359,16 @@ h1 {
     font-size: 1.5rem;
 }
 
+.cadastro {
+    width: 80%;
+}
+
 .cadastro input  {
-    width: 58%;
-    height: 45px;
+    width: 90%;
+    height: 48px;
     border-radius: 10px;
     border-color: #0D1136;
-    margin-top: 28px;
+    margin-top: 30px;
     padding: 0 10px;
     background-color: darkgray;
 }
@@ -313,32 +376,37 @@ h1 {
 .cadastro_usuario, .cadastro_email , .cadastro_senha , .confirmacao_senha, .botao_cadastro{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .cadastro_usuario input {
     background-image: url(./assets/icons8-usuário-de-gênero-neutro-32.png);
     background-repeat: no-repeat;
     background-size: 35px;
-    background-position: left;
-    padding-left: 8%;
+    background-position-x: 96%;
+    background-position-y: center;
+    padding: 0 15% 0 5%;
+    outline: none;
 }
 
 .cadastro_email input {
     background-image: url(./assets/o-email.png);
     background-repeat: no-repeat;
     background-size: 25px;
-    background-position: left;
-    background-position: 5px;
-    padding-left: 8%;
+    background-position-x: 95%;
+    background-position-y: center;
+    padding: 0 15% 0 5%;
+    outline: none;
 }
 
 .cadastro_senha input , .confirmacao_senha input {
     background-image: url(./assets/cadeado_senha.png);
     background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: left;
-    background-position: 1px;
-    padding-left: 8%;
+    background-size: 25px;
+    background-position-x: 95%;
+    background-position-y: center;
+    padding: 0 15% 0 5%;
+    outline: none;
 }
 
 .botao_cadastro {
@@ -361,7 +429,7 @@ h1 {
     color: white;
     text-decoration: none;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #link_login a:hover {
