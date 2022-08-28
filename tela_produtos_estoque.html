@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./style.css">
     <title>Sistema de Estoque</title>
 </head>
-<body class="tela_historico">
-    <div class="interface_historico">
+<body class="tela_principal">
+    <div class="interface">
         <div class="painel_esquerdo">
             <img src="https://grupomalwee.com.br/wp-content/themes/grupo-malwee-theme/static/images/brands/logo-grupo-malwee.png" alt="">
             <a role="button" href="./tela_produtos_estoque.html"> Produtos </a>
@@ -19,16 +19,27 @@
             <div id="atalhos">
                 <a href="#">Suporte Online</a>
 
-                <a href="#">Minha Conta</a>
+                <a href="./minha_conta.html">Minha Conta</a>
                 <img src="https://cdn-icons-png.flaticon.com/128/5617/5617164.png" alt="">
             </div>
             <div class="caixa_titulo">
 
             </div>
-            <h1> Histórico de Estoque </h1>
-            <div class="caixa_historico">
-                <div id="vertical_esquerda"></div>
-                <div id="vertical_direita"></div>
+            <h1> Controle de Estoque </h1>
+            <div class="linha_caixas">
+
+                <a role="button" href="./tela_produtos_estoque.html" class="caixa_estoque"> Estoque </a>
+            
+                <a role="button" href="./tela_produtos_cadastrar.html" class="caixa_cadastrar"> Cadastrar </a>
+            
+                <a role="button" href="./tela_produtos_excluir.html" class="caixa_excluir"> Excluir </a>
+            
+                <a role="button" href="./tela_produtos_editar.html" class="caixa_editar"> Editar </a>
+            </div>
+            <div class="caixa_dados">
+                <div class="input_estoque">
+                    <input type="text" placeholder="Procure o seu produto...">
+                </div>
             </div>
         </div>
 

@@ -140,6 +140,7 @@
     display: flex;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .interface {
@@ -433,4 +434,220 @@ h1 {
 
 #link_login a:hover {
     color: blue;
+}
+
+/* Página Cadastro de produto*/
+
+.box_cadastrar {
+    height: 65%;
+    width: 100%;
+    background-color: #e1e2e6;
+    margin-top: 15px;
+    border: solid 2px;
+    border-color: #c5c7c9;
+    border-radius: 2px;
+}
+
+.tela_cadastrar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3.5rem 1rem;
+}
+
+#texto_cadastrar h2 {
+    padding: 4% 3% 0% 3%;
+    font-size: 30px;
+}
+
+#primeira_linha_cadastro {
+    display: flex;
+    justify-content: space-around;
+}
+
+#segunda_linha_cadastro {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+#input_codigo, #input_nome, #input_quantidade, #input_categoria, #input_cor {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 60px;
+}
+
+#input_codigo input{
+    width: 100%;
+    height: 100%;
+}
+
+#input_nome input{
+    width: 100%;
+    height: 100%;
+}
+
+#input_quantidade input{
+    width: 50%;
+    height: 100%;
+}
+
+#input_categoria input{
+    width: 100%;
+    height: 100%;
+}
+
+#input_cor input{
+    width: 100%;
+    height: 100%;
+}
+
+#botao_cadastrar_produto {
+    display: flex;
+    justify-content: end;
+    width: 80px;
+    height: 45px;
+    margin-top: 5%;
+    margin-left: 90%;
+}
+
+#botao_cadastrar_produto button{
+    width: 100%;
+    height: 100%;
+    background-color: #55AF7D;
+    border: none;
+    font-size: 15px;
+}
+
+/* Página de Excluir produto*/
+
+.box_excluir {
+    height: 65%;
+    width: 100%;
+    background-color: #e1e2e6;
+    margin-top: 15px;
+    border: solid 2px;
+    border-color: #c5c7c9;
+    border-radius: 2px;
+}
+
+/* Página de editar produto*/
+
+.box_editar {
+    height: 65%;
+    width: 100%;
+    background-color: #e1e2e6;
+    margin-top: 15px;
+    border: solid 2px;
+    border-color: #c5c7c9;
+    border-radius: 2px;
+}
+
+/* Página do histórico */
+
+.tela_historico {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.interface_historico {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.caixa_historico {
+    height: 78%;
+    width: 100%;
+    background-color: #e1e2e6;
+    margin-top: 15px;
+    border: solid 2px;
+    border-color: #c5c7c9;
+    border-radius: 2px;
+}
+
+#vertical_esquerda {
+    border: 4px #145C08;
+    height: 500px;
+    position:absolute;
+    left: 22%;
+    border-style: dotted;
+}
+
+#vertical_direita {
+    border: 4px #145C08;
+    height: 500px;
+    position:absolute;
+    left: 98%;
+    border-style: dotted;
+}
+
+/* Página Minha Conta */
+
+#dados_conta {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 7% 0 0 2%;
+}
+
+#primeira_linha_conta {
+    display: flex;
+    justify-content: space-around;
+}
+
+#dados_nome, #dados_email, #dados_senha, #dados_nascimento, #dados_cpf, #dados_telefone, #dados_sexo {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 55px;
+}
+
+#dados_nome input {
+    width: 100%;
+    height: 100%;
+}
+
+#dados_email input {
+    width: 100%;
+    height: 100%;
+}
+
+#dados_senha input {
+    width: 100%;
+    height: 100%;
+}
+
+#segunda_linha_conta {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+
+#dados_nascimento input {
+    width: 100%;
+    height: 100%;
+}
+
+#dados_cpf input {
+    width: 100%;
+    height: 100%;
+}
+
+#dados_telefone input {
+    width: 100%;
+    height: 100%;
+}
+
+#terceira_linha_conta {
+    display: flex;
+    margin: 8% 0 0 4%;
+}
+
+#dados_sexo input {
+    width: 100%;
+    height: 100%;
 }
