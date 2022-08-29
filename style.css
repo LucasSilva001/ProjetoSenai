@@ -163,7 +163,7 @@
     font-size: 1.2rem;
 }
 
-#atalhos img {
+#atalhos a img {
     width: 35px;
 }
 
@@ -176,26 +176,35 @@
     border-color: #c5c7c9;
 }
 
-.painel_esquerdo img {
+.painel_esquerdo #logo_malwee {
     width: 95%;
     margin-top: 10%;
     justify-content: center;
 }
 
-.painel_esquerdo a {
+.painel_esquerdo #produto, #historico, #sair{
     display: flex;
-    font-size: 1.4rem;
-    justify-content: center;
+    margin-left: 15%;
     align-items: center;
+    margin-top: 16%;
+}
+
+.painel_esquerdo a{
+    font-size: 1.7rem;
     text-decoration: none;
     color: black;
-    margin-top: 16%;
+    margin-left: 8%;
+}
+
+.painel_esquerdo #produto img, #historico img, #sair img {
+    display: flex;
+    width: 45px;
 }
 
 .centro {
     height: 100%;
     width: 100%;
-    margin: 15px 10px;
+    margin: 15px 0 0 15px;
 }
 
 .caixa_titulo {
@@ -267,7 +276,7 @@ h1 {
 }
 
 .caixa_dados {
-    height: 68%;
+    height: 65%;
     width: 100%;
     background-color: #e1e2e6;
     margin-top: 15px;
@@ -548,20 +557,26 @@ h1 {
 
 .tela_historico {
     display: flex;
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
     overflow: hidden;
 }
 
 .interface_historico {
     display: flex;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
-.caixa_historico {
-    height: 78%;
+.centro_historico {
+    height: 100vh;
     width: 100%;
+    margin: 15px 0 0 15px;
+}
+
+.caixa_historico {
+    height: 76%;
+    width: 99.5%;
     background-color: #e1e2e6;
     margin-top: 15px;
     border: solid 2px;
@@ -571,7 +586,7 @@ h1 {
 
 #vertical_esquerda {
     border: 4px #145C08;
-    height: 500px;
+    height: 75%;
     position:absolute;
     left: 22%;
     border-style: dotted;
@@ -579,7 +594,7 @@ h1 {
 
 #vertical_direita {
     border: 4px #145C08;
-    height: 500px;
+    height: 75%;
     position:absolute;
     left: 98%;
     border-style: dotted;

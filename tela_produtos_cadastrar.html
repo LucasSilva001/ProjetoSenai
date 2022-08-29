@@ -10,17 +10,24 @@
 <body class="tela_principal">
     <div class="interface">
         <div class="painel_esquerdo">
-            <img src="https://grupomalwee.com.br/wp-content/themes/grupo-malwee-theme/static/images/brands/logo-grupo-malwee.png" alt="">
-            <a role="button" href="./tela_produtos_estoque.html"> Produtos </a>
-            <a role="button" href="./historico.html"> Histórico </a>
-            <a role="button" href="./index.html"> Configurações </a>
+            <img src="https://grupomalwee.com.br/wp-content/themes/grupo-malwee-theme/static/images/brands/logo-grupo-malwee.png" id="logo_malwee" alt="">
+            <div id="produto">
+                <img src="./assets/produto.png" alt="produto"> 
+                <a role="button" href="./tela_produtos_estoque.html"> Produtos </a>
+            </div>
+            <div id="historico">
+                <img src="./assets/historico.png" alt="histórico"> 
+                <a role="button" href="./historico.html"> Histórico </a>
+            </div>
+            <div id="sair">
+                <img src="./assets/sair.png" alt="deslogar">
+                <a href="./index.html"> Sair</a>
+            </div>
         </div>
         <div class="centro">
             <div id="atalhos">
-                <a href="#">Suporte Online</a>
-
                 <a href="./minha_conta.html">Minha Conta</a>
-                <img src="https://cdn-icons-png.flaticon.com/128/5617/5617164.png" alt="">
+                <a href="./minha_conta.html"> <img src="./assets/icone_conta.png" alt=""> </a>
             </div>
             <div class="caixa_titulo">
             </div>
@@ -43,25 +50,25 @@
                     <div id="primeira_linha_cadastro">
                         <div id="input_codigo">
                             <big>Código</big>
-                            <input type="text" placeholder="Digite o código">
+                            <input type="text" placeholder="Código do Produto">
                         </div>
                         <div id="input_nome">
                             <big>Nome</big>
-                            <input type="text" placeholder="Digite o Nome do produto">
+                            <input type="text" placeholder="Nome do produto">
                         </div>
                         <div id="input_quantidade">
                             <big>Quantidade</big>
-                            <input type="text" placeholder="Informe a quantidade">
+                            <input type="text" placeholder="Quantidade">
                         </div>
                     </div>
                     <div id="segunda_linha_cadastro">
                         <div id="input_categoria">
                             <big>Categoria</big>
-                            <input type="text" placeholder="Informe a categoria do produto">
+                            <input type="text" placeholder="Categoria do produto">
                         </div>
                         <div id="input_cor">
                             <big>Cor</big>
-                            <input type="text" placeholder="Informe a cor do produto">
+                            <input type="text" placeholder="Cor do produto">
                         </div>
                     </div>
                     <div id="botao_cadastrar_produto">
