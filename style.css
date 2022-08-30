@@ -1,3 +1,8 @@
+:root {
+    --cor-fundo-tema-escuro: rgb(43, 41, 41);
+    --cor-letra-tema-escuro: rgb(255, 255, 255);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -153,11 +158,69 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-right: 10px;
+    margin: 5px 10px 0 0;
+    background-color: #D9D9D9;
+    border: solid 2px;
+    border-color: #c5c7c9;
+}
+
+/* dropdown Tema */
+
+.dp-menu ul {
+    list-style-type: none;
+}
+
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a, #tema-escuro, #tema-claro{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.dp-menu ul li a:hover{
+    background-color: #a3a3a3;
+}
+
+
+
+/* sub_drop Tema */
+
+.dp-menu ul ul {
+    display: none;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 100px;
+    background-color: #D9D9D9;
+    border: solid 2px;
+    border-color: #c5c7c9;
+}
+
+#tema-claro , #tema-escuro {
+    display: flex;
+    align-items: center;
+    left: 0;
+}
+
+#tema-claro input, #tema-escuro input {
+    margin-left: 10px;
+}
+
+#tema-escuro:hover, #tema-claro:hover {
+    background-color: #a3a3a3;
 }
 
 #atalhos a {
-    margin-right: 10px;
+    margin-right: 20px;
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
@@ -571,7 +634,6 @@ h1 {
 .centro_historico {
     height: 100vh;
     width: 100%;
-    margin-top: 15px;
 }
 
 .caixa_historico {

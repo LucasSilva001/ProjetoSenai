@@ -10,6 +10,7 @@
 <body class="tela_principal">
     <div class="interface">
         <div class="painel_esquerdo">
+
             <img src="https://grupomalwee.com.br/wp-content/themes/grupo-malwee-theme/static/images/brands/logo-grupo-malwee.png" id="logo_malwee" alt="">
             <div id="produto">
                 <img src="./assets/produto.png" alt="produto"> 
@@ -26,8 +27,25 @@
         </div>
         <div class="centro">
             <div id="atalhos">
+                <nav class="dp-menu">
+                    <ul>
+                        <li> <a href=""> Tema </a>
+                            <ul>
+                                <li>
+                                    <div id="tema-claro">
+                                        <label for="claro">Claro</label>
+                                        <input type="radio" id="claro">
+                                    </div>
+                                    <div id="tema-escuro">
+                                        <label for="dark">Dark</label>
+                                        <input type="radio" id="dark">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
                 <a href="#" onclick="alternarCentro('minha_conta')"> Minha Conta </a>
-                <a href="#" onclick="alternarCentro('minha_conta')"> <img src="./assets/icone_conta.png" alt="blank"> </a>
             </div>
             <div class="caixa_titulo">
 
