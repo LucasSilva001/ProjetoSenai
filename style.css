@@ -1,12 +1,16 @@
-:root {
-    --cor-fundo-tema-escuro: rgb(43, 41, 41);
-    --cor-letra-tema-escuro: rgb(255, 255, 255);
-}
-
 * {
     margin: 0;
     padding: 0;
 }
+
+body[data-theme="t-light" ] {
+    --color-text: rgb(0, 0, 0);
+}
+
+body[data-theme="t-dark"] {
+    --color-background: rgb(31, 31, 31);
+}
+
 
 /* Body da index */
 .pagina_login {
@@ -162,61 +166,6 @@
     background-color: #D9D9D9;
     border: solid 2px;
     border-color: #c5c7c9;
-}
-
-/* dropdown Tema */
-
-.dp-menu ul {
-    list-style-type: none;
-}
-
-.dp-menu ul li{
-    display: inline;
-    position: relative;
-}
-
-.dp-menu ul li a, #tema-escuro, #tema-claro{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-}
-
-.dp-menu ul li a:hover{
-    background-color: #a3a3a3;
-}
-
-
-
-/* sub_drop Tema */
-
-.dp-menu ul ul {
-    display: none;
-    position: absolute;
-}
-
-.dp-menu ul li:hover ul {
-    display: block;
-}
-
-.dp-menu ul ul {
-    width: 100px;
-    background-color: #D9D9D9;
-    border: solid 2px;
-    border-color: #c5c7c9;
-}
-
-#tema-claro , #tema-escuro {
-    display: flex;
-    align-items: center;
-    left: 0;
-}
-
-#tema-claro input, #tema-escuro input {
-    margin-left: 10px;
-}
-
-#tema-escuro:hover, #tema-claro:hover {
-    background-color: #a3a3a3;
 }
 
 #atalhos a {
@@ -676,55 +625,43 @@ h1 {
     justify-content: space-around;
 }
 
-#dados_nome, #dados_email, #dados_senha, #dados_nascimento, #dados_cpf, #dados_telefone, #dados_sexo {
+
+#primeira_linha_conta {
+    flex-direction: column;
+    align-items: center;
+}
+
+#dados_nome, #dados_email, #dados_senha {
     display: flex;
     flex-direction: column;
     width: 25%;
-    height: 55px;
+}
+
+#dados_nome {
+    margin-top: 5%;
+}
+
+#dados_email {
+    margin-top: 5%;
+}
+
+#dados_senha {
+    margin-top: 5%;
 }
 
 #dados_nome input {
     width: 100%;
-    height: 100%;
+    height: 25px;
 }
 
 #dados_email input {
     width: 100%;
     height: 100%;
+    height: 25px;
 }
 
 #dados_senha input {
     width: 100%;
     height: 100%;
-}
-
-#segunda_linha_conta {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 8%;
-}
-
-#dados_nascimento input {
-    width: 100%;
-    height: 100%;
-}
-
-#dados_cpf input {
-    width: 100%;
-    height: 100%;
-}
-
-#dados_telefone input {
-    width: 100%;
-    height: 100%;
-}
-
-#terceira_linha_conta {
-    display: flex;
-    margin: 8% 0 0 4%;
-}
-
-#dados_sexo input {
-    width: 100%;
-    height: 100%;
+    height: 25px;
 }
