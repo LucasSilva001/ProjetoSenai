@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
     <title>Sistema de Estoque</title>
 </head>
 <body class="tela_principal">
@@ -45,14 +46,19 @@
                 <a role="button" href="#" class="caixa_editar" onclick="alternarCaixa('editar_produto')"> Editar </a>
             </div>
             <div class="caixa_dados">
-                <div class="input_estoque">
-                    <input type="text" placeholder="Procure o produto aqui...">
-                </div>
+                <table border="1">
+                    <thead class="cabecario">
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-
-    <script src="./script.js"></script>
 
 </body>
 </html>
