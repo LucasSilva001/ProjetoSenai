@@ -46,16 +46,16 @@ class Produto {
     listaTabela() {
         let tbody = document.getElementById('tbody');
 
-        for(let i = 0; i < this.arrayProdutos.lenght; i++) {
+        for(let i = 0; i < this.arrayProdutos.length; i++) {
             let tr = tbody.insertRow();
 
             let td_id = tr.insertCell();
-            let td_nome_produto = tr.insertCell();
-            let td_quantidade_produto = tr.insertCell();
+            let td_produto = tr.insertCell();
+            let td_quantidade = tr.insertCell();
 
             td_id.innerText = this.arrayProdutos[i].id;
-            td_nome_produto.innerText = this.arrayProdutos[i].nomeProduto;
-            td_quantidade_produto.innerText = this.arrayProdutos[i].qntdProduto;
+            td_produto.innerText = this.arrayProdutos[i].nomeProduto;
+            td_quantidade.innerText = this.arrayProdutos[i].quantidadeProduto;
         }
     }
 
@@ -67,9 +67,9 @@ class Produto {
     lerDados() {
         let produto = {}
         
-        produto.id = this.id;
+        produto.id = document.getElementById('');
         produto.nomeProduto = document.getElementById('nome_produto').value;
-        produto.quantidade_produto = document.getElementById('quantidade_produto').value;
+        produto.quantidadeProduto = document.getElementById('quantidade_produto').value;
 
         return produto;
     }
@@ -80,7 +80,7 @@ class Produto {
         if(produto.nomeProduto == '') {
             msg += '- Informe o nome do produto \n';
         }
-        if(produto.qntdProduto == '') {
+        if(produto.quantidadeProduto == '') {
             msg += '- Informe a quantidade do produto \n';
         }
         if(msg != '') {
