@@ -343,6 +343,16 @@ table th, td {
     padding: 0;
 }
 
+.caixa_cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    background-color: #0D1136;
+}
+
 #box-cadastro {
     height: 100%;
     width: 50%;

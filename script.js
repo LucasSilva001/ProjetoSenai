@@ -29,8 +29,8 @@ function alternarCentro(a) {
 class Produto {
 
     constructor() {
-        this.id = 1;
-        this.arrayProdutos = [];
+        JSON.parse(localStorage.getItem('arrayProdutos'));
+        this.arrayProdutos = []
     }
 
     salvar() {
@@ -45,6 +45,7 @@ class Produto {
 
     listaTabela() {
         let tbody = document.getElementById('tbody');
+        tbody.innerText = '';
 
         for(let i = 0; i < this.arrayProdutos.length; i++) {
             let tr = tbody.insertRow();
@@ -53,21 +54,22 @@ class Produto {
             let td_produto = tr.insertCell();
             let td_quantidade = tr.insertCell();
 
-            td_id.innerText = this.arrayProdutos[i].id;
-            td_produto.innerText = this.arrayProdutos[i].nomeProduto;
-            td_quantidade.innerText = this.arrayProdutos[i].quantidadeProduto;
+            td_id.innerHTML = this.arrayProdutos[i].id;
+            td_produto.innerHTML = this.arrayProdutos[i].nomeProduto;
+            td_quantidade.innerHTML = this.arrayProdutos[i].quantidadeProduto;
         }
+
     }
 
     adicionar(produto) {
-        this.arrayProdutos.push(produto);
-        this.id++
+        this.arrayProdutos.push(produto)
+        this.salvar_localStorage()
     }
 
     lerDados() {
         let produto = {}
         
-        produto.id = document.getElementById('');
+        produto.id = document.getElementById('codigo_produto').value;
         produto.nomeProduto = document.getElementById('nome_produto').value;
         produto.quantidadeProduto = document.getElementById('quantidade_produto').value;
 
@@ -89,6 +91,10 @@ class Produto {
         }
 
         return true;
+    }
+
+    salvar_localStorage() {
+        localStorage.setItem("lista_item", JSON.stringify(produto))
     }
 }
 
