@@ -136,193 +136,7 @@
     color: blue;
 }
 
-/* Body da tela principal */
-.tela_principal {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-
-.interface {
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
-#atalhos {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin: 5px 10px 0 0;
-    background-color: #D9D9D9;
-    border: solid 2px;
-    border-color: #c5c7c9;
-}
-
-#atalhos a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: black;
-    font-size: 1.2rem;
-}
-
-#atalhos a img {
-    width: 35px;
-}
-
-.painel_esquerdo {
-    height: 100vh;
-    width: 350px;
-    background-color: #D9D9D9;
-    margin-top: 5px;
-    border: solid 2px;
-    border-color: #c5c7c9;
-    margin-right: 15px;
-}
-
-.painel_esquerdo #logo_malwee {
-    width: 95%;
-    margin-top: 10%;
-    justify-content: center;
-}
-
-.painel_esquerdo #produto, #historico, #sair{
-    display: flex;
-    margin-left: 15%;
-    align-items: center;
-    margin-top: 16%;
-}
-
-.painel_esquerdo a{
-    font-size: 1.7rem;
-    text-decoration: none;
-    color: black;
-    margin-left: 8%;
-}
-
-.painel_esquerdo #produto img, #historico img, #sair img {
-    display: flex;
-    width: 45px;
-}
-
-.centro {
-    height: 100%;
-    width: 100%;
-}
-
-.caixa_titulo {
-    display: flex;
-    height: 1px;
-    width: 100%;
-    background-color: #D9D9D9;
-    align-items: center;
-    border: solid 2px;
-    border-color: #c5c7c9;
-    margin-top: 10px;
-}
-
-h1 {
-    margin-top: 20px;
-    padding-left: 2%;
-    font-size: 2.0rem;
-}
-
-.linha_caixas {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    height: 9%;
-    width: 100%;
-}
-
-.caixa_estoque , .caixa_cadastrar , .caixa_excluir, .caixa_editar {
-    display: flex;
-    height: 100%;
-    width: 18%;
-    background-color: #D9D9D9;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    font-size: 1.4rem;
-    justify-content: center;
-    align-items: center;
-    border-color: #c5c7c9;
-}
-
-.caixa_estoque {
-    background-image: url(./assets/estoque-pronto.png);
-    background-repeat: no-repeat;
-    background-size: 40px;
-    background-position: 10%;
-}
-
-.caixa_cadastrar {
-    background-image: url(./assets/registro.png);
-    background-repeat: no-repeat;
-    background-size: 40px;
-    background-position: 10%;
-}
-
-.caixa_excluir {
-    background-image: url(./assets/excluir.png);
-    background-repeat: no-repeat;
-    background-size: 35px;
-    background-position: 12%;
-}
-
-.caixa_editar {
-    background-image: url(./assets/escrever.png);
-    background-repeat: no-repeat;
-    background-size: 35px;
-    background-position: 15%;
-}
-
-.caixa_dados {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 65%;
-    width: 100%;
-    background-color: #e1e2e6;
-    margin-top: 15px;
-    border: solid 2px;
-    border-color: #c5c7c9;
-    border-radius: 2px;
-}
-
-table {
-    border-collapse: collapse;
-    border: 2px solid ;
-    width: 50%;
-}
-
-table th, td {
-    padding: 1px 5px;
-    text-align: left;
-}
-
-.input_estoque {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-}
-
-.input_estoque input {
-    display: flex;
-    width: 100%;
-    height: 40px;
-    margin: 10px;
-    background-image: url(https://cdn-icons.flaticon.com/png/128/3991/premium/3991270.png?token=exp=1660932313~hmac=13125a7181f4a7b999a3a6b0c24ae067);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: 95%;
-    padding-left: 2%;
-    border-color: #0D1136;
-}
-
-/* Página de cadastro */
+/* Página de cadastro de Usuário */
 
 .pagina_cadastro {
     display: flex;
@@ -463,7 +277,185 @@ table th, td {
     color: blue;
 }
 
-/* Página Cadastro de produto*/
+/* Body da tela principal */
+.tela_principal {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.interface {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#atalhos {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 5px 10px 0 0;
+    background-color: #D9D9D9;
+    border: solid 2px;
+    border-color: #c5c7c9;
+}
+
+#atalhos a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+#atalhos a img {
+    width: 35px;
+}
+
+.painel_esquerdo {
+    height: 100vh;
+    width: 350px;
+    background-color: #D9D9D9;
+    margin-top: 5px;
+    border: solid 2px;
+    border-color: #c5c7c9;
+    margin-right: 15px;
+}
+
+.painel_esquerdo #logo_malwee {
+    width: 95%;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.painel_esquerdo #produto, #historico, #sair{
+    display: flex;
+    margin-left: 15%;
+    align-items: center;
+    margin-top: 16%;
+}
+
+.painel_esquerdo a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: black;
+    margin-left: 8%;
+}
+
+.painel_esquerdo #produto img, #historico img, #sair img {
+    display: flex;
+    width: 45px;
+}
+
+.centro {
+    height: 100%;
+    width: 100%;
+}
+
+.caixa_titulo {
+    display: flex;
+    height: 1px;
+    width: 100%;
+    background-color: #D9D9D9;
+    align-items: center;
+    border: solid 2px;
+    border-color: #c5c7c9;
+    margin-top: 10px;
+}
+
+h1 {
+    margin-top: 20px;
+    padding-left: 2%;
+    font-size: 2.0rem;
+}
+
+.caixa_dados {
+    display: flex;
+    height: 75%;
+    width: 99%;
+    background-color: #e1e2e6;
+    margin-top: 15px;
+    border: solid 2px;
+    border-color: #c5c7c9;
+    border-radius: 2px;
+}
+
+/* Estoque */
+
+.tela_estoque {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 1% 2% 0 2%;
+}
+
+#texto_estoque {
+    width: 100%;
+}
+
+#texto_estoque h2 {
+    padding: 2% 0% 0% 0%;
+    font-size: 30px;
+    text-align: center;
+}
+
+#botao_mostrarModal {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    margin-top: 2%;
+}
+
+#botao_mostrarModal button{
+    width: 15%;
+    height: 100%;
+    background-color: #55AF7D;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid;
+    width: 100%;
+    margin-top: 2%;
+}
+
+table th, td {
+    text-align: left;
+    border-color: #c5c7c9;
+}
+
+table td img{
+    width: 22px;
+    margin-left: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.input_estoque {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.input_estoque input {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    background-image: url(https://cdn-icons.flaticon.com/png/128/3991/premium/3991270.png?token=exp=1660932313~hmac=13125a7181f4a7b999a3a6b0c24ae067);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 95%;
+    padding-left: 2%;
+    border-color: #0D1136;
+}
+
+/* Cadastro de produto*/
 
 .box_cadastrar {
     height: 65%;
@@ -475,33 +467,77 @@ table th, td {
     border-radius: 2px;
 }
 
+.modal {
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
 .tela_cadastrar {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    padding: 3.5rem 1rem;
+    align-items: center;
+    background-color: white;
+    width: 60%;
+    height: 70%;
+    border-radius: 0.5rem;
+    padding: 16px 24px;
+}
+
+.mostrar-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+#texto_cadastrar {
+    width: 100%;
 }
 
 #texto_cadastrar h2 {
     padding: 4% 3% 0% 3%;
     font-size: 30px;
+    text-align: center;
 }
 
 #primeira_linha_cadastro {
     display: flex;
-    justify-content: space-around;
+    margin-top: 5%;
+}
+
+#input_codigo, #input_nome  {
+    margin-left: 20px;
+}
+
+#input_quantidade {
+    margin-top: 5%;
+    margin-left: 25%;
 }
 
 #segunda_linha_cadastro {
     display: flex;
-    justify-content: space-around;
     margin-top: 5%;
+}
+
+#input_categoria, #input_cor {
+    margin-left: 20px;
 }
 
 #input_codigo, #input_nome, #input_quantidade, #input_categoria, #input_cor {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 50%;
     height: 60px;
 }
 
@@ -530,45 +566,43 @@ table th, td {
     height: 100%;
 }
 
-#botao_cadastrar_produto {
+#botao_modal {
     display: flex;
-    justify-content: end;
-    width: 80px;
+    width: 100%;
+}
+
+#botao_voltar {
+    display: flex;
+    width: 100%;
     height: 45px;
     margin-top: 5%;
-    margin-left: 90%;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+#botao_voltar button{
+    width: 35%;
+    height: 100%;
+    background-color: darkgray;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#botao_cadastrar_produto {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    margin-top: 5%;
 }
 
 #botao_cadastrar_produto button{
-    width: 100%;
+    width: 35%;
     height: 100%;
     background-color: #55AF7D;
     border: none;
     font-size: 15px;
-}
-
-/* Página de Excluir produto*/
-
-.box_excluir {
-    height: 65%;
-    width: 100%;
-    background-color: #e1e2e6;
-    margin-top: 15px;
-    border: solid 2px;
-    border-color: #c5c7c9;
-    border-radius: 2px;
-}
-
-/* Página de editar produto*/
-
-.box_editar {
-    height: 65%;
-    width: 100%;
-    background-color: #e1e2e6;
-    margin-top: 15px;
-    border: solid 2px;
-    border-color: #c5c7c9;
-    border-radius: 2px;
+    cursor: pointer;
 }
 
 /* Página do histórico */
@@ -631,7 +665,6 @@ table th, td {
     justify-content: space-around;
 }
 
-
 #primeira_linha_conta {
     flex-direction: column;
     align-items: center;
@@ -670,14 +703,4 @@ table th, td {
     width: 100%;
     height: 100%;
     height: 25px;
-}
-
-.retangulo {
-    display: flex;
-    width: 90%;
-    height: 10%;
-    border: solid 2px;
-    border-color: black;
-    justify-content: space-around;
-    align-items: center;
 }
