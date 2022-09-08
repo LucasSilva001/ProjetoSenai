@@ -157,7 +157,9 @@ class Produto {
         document.getElementById('categoria_produto').value = '';
         document.getElementById('cor_produto').value = '';
         
+        document.getElementById('texto_cadastrar').innerText = 'Cadastro de Produto';
         document.getElementById('botao_cadastrar').innerText = '+ Novo';
+
         this.editar = null;
 
     }
@@ -184,6 +186,8 @@ class Produto {
     document.getElementById('quantidade_produto').value = dados.quantidadeProduto;
     document.getElementById('categoria_produto').value = dados.categoria;
     document.getElementById('cor_produto').value = dados.cor;
+
+    document.getElementById('texto_cadastrar').innerText = 'Editar Produto';
 
     document.getElementById('botao_cadastrar').innerText = 'Atualizar';
    }
